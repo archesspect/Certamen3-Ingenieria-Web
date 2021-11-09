@@ -1,0 +1,27 @@
+<div class="container">
+    <h2>Chile - Región de la Araucanía </h2>
+</div>
+<!-- <div class="container">
+    <a href="">Celcius</a>
+    <a href="">Fahrenheit</a>
+</div> -->
+
+<app-header-screen></app-header-screen>
+<app-navbar-screen></app-navbar-screen>
+<div class="container mt-5">
+    <div>
+        <ul>
+            <div *ngFor="let climasaraucania of Listaclimas">
+                <li>
+                    <h2> {{climasaraucania.dia}}</h2>
+                    <button>
+                        <img src='../../../assets/{{climasaraucania.imagen}}' alt='{{climasaraucania.imagen}}'>
+                    </button>
+                    <p>{{climasaraucania.temperatura}}</p>
+                    <p>{{climasaraucania.tipo}}</p>
+                </li>
+                
+            </div>
+        </ul>
+    </div>
+</div>

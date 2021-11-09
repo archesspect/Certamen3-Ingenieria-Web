@@ -1,0 +1,23 @@
+<div class="container">
+    <h2>Chile - Región del Bio-Bio </h2>
+</div>
+
+<app-header-screen></app-header-screen>
+<app-navbar-screen></app-navbar-screen>
+<div class="container mt-5">
+    <div>
+        <ul>
+            <div *ngFor="let climasbiobio of Listaclimas">
+                <li>
+                    <h2> {{climasbiobio.dia}}</h2>
+                    <button>
+                        <img src='../../../assets/{{climasbiobio.imagen}}' alt='{{climasbiobio.imagen}}' onclick="mostrar()">
+                    </button>
+                    <p>{{climasbiobio.temperatura}}</p>
+                    <p>{{climasbiobio.tipo}}</p>
+                </li>
+                
+            </div>
+        </ul>
+    </div>
+</div>

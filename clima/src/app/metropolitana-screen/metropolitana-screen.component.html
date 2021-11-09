@@ -1,0 +1,22 @@
+<div class="container">
+    <h2>Chile - Región Metropolitana </h2>
+</div>
+<app-header-screen></app-header-screen>
+<app-navbar-screen></app-navbar-screen>
+<div class="container mt-5">
+    <div>
+        <ul>
+            <div *ngFor="let climasmetropolitana of Listaclimas">
+                <li>
+                    <h2> {{climasmetropolitana.dia}}</h2>
+                    <button>
+                        <img src='../../../assets/{{climasmetropolitana.imagen}}' alt='{{climasmetropolitana.imagen}}' onclick="mostrar()">
+                    </button>
+                    <p>{{climasmetropolitana.temperatura}}</p>
+                    <p>{{climasmetropolitana.tipo}}</p>
+                </li>
+                
+            </div>
+        </ul>
+    </div>
+</div>
