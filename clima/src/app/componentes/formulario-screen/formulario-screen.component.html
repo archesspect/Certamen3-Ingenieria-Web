@@ -1,6 +1,6 @@
  
  <div class="container mt-5" id="formulariocambio">
-     <form [formGroup]="formulario" id="formulariocambio" onclick="mostrar()" hidden="true" novalidate>
+     <form [formGroup]="formulario" activeid="formulariocambio" onclick="mostrar()" novalidate>
              <ul>
                  <li>
                      <h1>Cambios</h1>
@@ -10,7 +10,6 @@
                      <br>
                      <select formControlName="region" id="region" name="Region ">
                          <br>
-                         <option>Seleccionar</option>
                          <option>Valparaíso</option>
                          <option>Metropolitana</option>
                          <option>Bio Bio</option>
@@ -52,7 +51,6 @@
                      <br>
                      <select formControlName="dia" id="dia" name="dia">
                          <br>
-                         <option>Seleccionar</option>
                          <option>Lunes</option>
                          <option>Martes</option>
                          <option>Miercoles</option>
