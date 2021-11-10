@@ -24,6 +24,9 @@ export class InicioScreenComponent implements OnInit {
     function mostrar(){
       (<HTMLInputElement> document.getElementById("formulariocambio")).hidden = false;
     }
+    function transformar(temp:number):number{
+      return (temp*1.8)+32;
+    }
   }
 
   ngOnInit(): void {

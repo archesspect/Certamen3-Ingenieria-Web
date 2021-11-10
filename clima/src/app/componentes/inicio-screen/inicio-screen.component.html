@@ -1,5 +1,11 @@
 <div class="container">
     <h2>Chile - Región de Valparaíso </h2>
+    <a href="">
+        <h2>Celcius</h2>
+    </a>
+    <a href="">
+        <h2>Fahrenheit</h2>
+    </a>
 </div>
 
 <app-header-screen></app-header-screen>
@@ -13,7 +19,7 @@
                     <button type="submit" id="botonvalparaiso" onsubmit="mostrar()">
                         <img src='../../../assets/{{climas.imagen}}' alt='{{climas.imagen}}'>
                     </button>
-                    <p>{{climas.temperatura}}</p>
+                    <p activeid=1>{{(climas.temperatura)}}°</p>
                     <p>{{climas.tipo}}</p>
                 </li>
             </div>
